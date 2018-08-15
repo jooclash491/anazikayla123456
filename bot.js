@@ -29,14 +29,14 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
 });
 client.on('message', message => {
     var args = message.content.split(/[ ]+/)
-    if(message.content.includes('كسمك')){
+    if(message.content.includes('كسمك,عرص,خول')){
         message.delete()
       message.channel.sendMessage("", {embed: {
         title: "متشتمش",
         color: 0x06DF00,
         description: "مَّا يَلْفِظُ مِن قَوْلٍ إِلَّا لَدَيْهِ رَقِيبٌ عَتِيدٌ ",
         footer: {
-          text: "By Abo Khalil"
+          text: "By Dr.Joo"
         }
       }}).then(msg => {msg.delete(4000)});
                           }
