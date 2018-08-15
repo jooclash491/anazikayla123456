@@ -27,5 +27,21 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
 });
+```
+client.on('message', message => {
+    var args = message.content.split(/[ ]+/)
+    if(message.content.includes('كسمك')){
+        message.delete()
+      message.channel.sendMessage("", {embed: {
+        title: "متشتمش",
+        color: 0x06DF00,
+        description: "مَّا يَلْفِظُ مِن قَوْلٍ إِلَّا لَدَيْهِ رَقِيبٌ عَتِيدٌ ",
+        footer: {
+          text: "By Abo Khalil"
+        }
+      }}).then(msg => {msg.delete(4000)});
+                          }
 
+     
+}); 
 client.login(process.env.BOT_TOKEN);
