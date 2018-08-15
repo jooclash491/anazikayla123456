@@ -29,7 +29,7 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
 });
 client.on('message', message => {
     var args = message.content.split(/[ ]+/)
-    if(message.content.includes('كسمك,عرص,خول')){
+    if(message.content.includes('كسمك عرص خول متناك هنيكك')){
         message.delete()
       message.channel.sendMessage("", {embed: {
         title: "متشتمش",
